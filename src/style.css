@@ -1,2 +1,117 @@
-html{
+body{
+    padding: 0;
+    margin: 0;
 }
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+
+
+#header{
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../src/img/headBackground1280x854.jpg);
+    background-size:cover;
+    border-bottom: 2px solid rgb(124, 124, 124);
+    box-shadow: 0px 0px 20px black;
+
+}
+
+.profile-image{
+    height: 400px;
+    min-width: 400px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    background-image: url(../src/img/profilePic.jpg);
+    background-size: cover;
+    justify-content: flex-end;
+    text-shadow: 1px 1px black;
+    font-size: 25px;
+    border: 2px solid black;
+    
+
+}
+
+
+.about-me{
+max-width: 600px;
+background-color: rgb(255, 255, 255);
+border-radius: 2px;
+padding: 30px;
+border: 2px solid black;
+}
+
+.social-links{
+    margin-left: 450px
+}
+
+.my-work{
+    margin: 40px 250px 40px 250px;
+    font-size: 20px;
+}
+
+.my-work-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-wrapper{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgb(115, 115, 115);
+    margin: 30px;
+    background-color: white;
+    min-width: 320px;
+}
+
+.project-screenshot{
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    font-size: 20px;
+}
+
+.project-info{
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+}
+
+footer{
+    background-color: rgb(32, 18, 138);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 10px;
+    width: 100vw;
+    box-shadow: 0 0 15px black;
+    color: white;
+    
+}
+
+.footerDescription{
+    width: 400px;
+    margin-right: 40px;
+}
+#footerImg{
+height: 350px;
+width: auto;
+object-fit: cover;
+border-radius: 2px;
+
+}
+

@@ -182,9 +182,10 @@ svg:hover{
 @media (max-width: 500px) {
 
     #header{
-     justify-content: space-evenly;
+     align-items: center;
      min-height: 500px;
      max-height: 1000px;
+     box-shadow: none;
     }
     .profile-image{
         max-width: 500px;
@@ -193,20 +194,22 @@ svg:hover{
         border-radius: 0;
     }
 
+    .about-me{
+        border: none;
+        border-top: 1px solid gray;
+        height: auto;
+        width: auto;
+        max-height: none;
+        min-height: none;
+        max-width: none;
+        min-width: none;
+        padding: 20px;
+    }
     h1{
         margin-top: 0;
         margin-left: 70px;
     }
-    .about-me{
-        padding: none;
-        height: 600px;
-        min-height: 400px;
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        border-top: 1px solid black;
-        border-radius: 0;
-    }
+
 
     .social-links{
         justify-content: center;

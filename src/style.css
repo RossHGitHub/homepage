@@ -8,11 +8,15 @@ html{
     background-color: rgb(244, 244, 244);
 }
 
-
+h1{
+    margin-left: 50px;
+    margin-top: -5px;
+}
 
 #header{
     display: flex;
     height: 700px;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     background-image: url(../src/img/headBackground1280x854.jpg);
@@ -48,12 +52,19 @@ border: 2px solid black;
 }
 
 .social-links{
-    margin-left: 450px
+    width: inherit;
+    display: flex;
+    justify-content:end;
 }
 
 .my-work{
-    margin: 40px 250px 40px 250px;
     font-size: 20px;
+    width: 100%;
+}
+
+h2{
+    margin-left: 80px;
+    
 }
 
 .my-work-wrapper{
@@ -61,6 +72,7 @@ border: 2px solid black;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%
 }
 
 .project-wrapper{
@@ -70,7 +82,7 @@ border: 2px solid black;
     box-shadow: 0px 0px 5px rgb(115, 115, 115);
     margin: 30px;
     background-color: white;
-    min-width: 320px;
+    min-width: 270px;
 }
 
 .project-screenshot{
@@ -96,9 +108,9 @@ footer{
     background-color: rgb(32, 18, 138);
     display: flex;
     justify-content: center;
-    padding: 20px 0 20px 10px;
-    width: 100vw;
-    box-shadow: 0 0 15px black;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
     color: white;
     
 }
@@ -113,5 +125,109 @@ width: auto;
 object-fit: cover;
 border-radius: 2px;
 
+}
+
+svg:hover{
+    cursor: pointer;
+    scale: 120%;
+    background-color: rgba(111, 214, 192, 0.506);
+    border-radius: 50%;
+    
+}
+
+@media (max-width: 1000px) {
+    #header{
+        flex-direction: column;
+        height: 600px;
+
+
+    }
+
+    h1{
+        display: block;
+        margin-top: 256px;
+        margin-left: 50px;
+    }
+
+    .profile-image{
+    width: 300px;
+    height: 300px;
+    }
+
+    .about-me{
+        max-height: 260px;
+        padding: 5px;
+        width: 500px;
+
+    }
+
+    .project-wrapper{
+        max-width: 200px;
+    }
+
+    .project-screenshot{
+        width: 270px;
+
+    }
+    
+    .footerDescription{
+        margin-left: 10px;
+    }
+
+    #footerImg{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #header{
+     justify-content: space-evenly;
+     min-height: 500px;
+     max-height: 1000px;
+    }
+    .profile-image{
+        max-width: 500px;
+        min-width: 320px;
+        border: none;
+        border-radius: 0;
+    }
+
+    h1{
+        margin-top: 0;
+        margin-left: 70px;
+    }
+    .about-me{
+        padding: none;
+        height: 600px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border-top: 1px solid black;
+        border-radius: 0;
+    }
+
+    .social-links{
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerDescription{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    #footerImg{
+        object-fit:contain;
+    }
 }
 
